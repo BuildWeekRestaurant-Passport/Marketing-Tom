@@ -1,10 +1,15 @@
-.title header {
+header {
     width: 100%;
     height: 8rem;
     padding: 0 1%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @mobile {
+        .flex-styling();
+        padding: 10rem 0;
+    }
 
     nav {
         display: flex;
@@ -16,11 +21,40 @@
             padding: 0 2rem;
             font-size: 1.8rem;
 
+            &:hover {
+                color: white;
+            }
+
+            @media @small-tablet {
+                font-size: 1.6rem;
+                padding: 0 1rem;
+            }
         }
+
+        @media @mobile {
+            .flex-styling();
+            justify-content: center;
+
+            a {
+                padding: 1.2rem 0;
+            }
+        }
+
+        
     }
 
     h1 {
-        text-shadow: 2px 2px #406098;
+        text-shadow: 2px 2px #f0e5e5;
         font-weight: bold;
+
+        @media @small-tablet {
+            font-size: 2.4rem;
+        }
+
+        @media @mobile {
+            padding: 1rem 0;
+        }
     }
+
+    
 }

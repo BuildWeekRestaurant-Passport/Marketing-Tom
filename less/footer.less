@@ -1,0 +1,55 @@
+footer {
+    background-color: #0a3055;
+    padding-top: 3%;
+
+    nav {
+        display: block;
+        margin-left: 3%;
+        padding-bottom: 2%;
+
+        a {
+            text-decoration: none;
+            font-size: 1.8rem;
+            display: block;
+            font-family: "Assistant", sans-serif;
+            color: #f0e5e5;
+            padding: 1% 0;
+
+            &:hover {
+                color: black;
+            }
+
+            @media @tablet {
+                font-size: 1.4rem;
+            }
+
+            @media @mobile {
+                padding: 1rem 0;
+                text-align: center;
+            }
+        }
+    }
+
+    @media @mobile {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        .flex-styling();
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.8rem;
+        color: #f0e5e5;
+        padding-bottom: 2%;
+
+        @media @tablet {
+            font-size: 1.4rem;
+        }
+
+        @media @mobile {
+            font-size: 1.2rem;
+        }
+      }
+
+}
